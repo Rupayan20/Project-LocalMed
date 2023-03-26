@@ -1,0 +1,123 @@
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #f2f2f2;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='7'><path d='M0 0.5l6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 7px;
+    padding-right: 30px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  
+  button[type="submit"] {
+    background-color: #d63031;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e84343;
+  }
+  
+  /* Animated underline effect */
+  .form-group input,
+  .form-group select {
+    position: relative;
+  }
+  
+  .form-group input::before,
+  .form-group select::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #d63031;
+    transition: width 0.3s ease;
+  }
+  
+  .form-group input:focus::before,
+  .form-group select:focus::before {
+    width: 100%;
+  }
+  
+  /* Colorful labels */
+  .booking-form label:nth-of-type(1) {
+    color: #ff7675;
+  }
+  
+  .booking-form label:nth-of-type(2) {
+    color: #74b9ff;
+  }
+  
+  .booking-form label:nth-of-type(3) {
+    color: #55efc4;
+  }
+  
+  .booking-form label:nth-of-type(4) {
+    color: #a29bfe;
+  }
+  
+  /* Gradient background */
+  body {
+    background: linear-gradient(to bottom right, #ff7675, #74b9ff, #55efc4, #a29bfe);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+ 
